@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { LoginService } from './login.service';
 
+
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -12,6 +13,7 @@ import { LoginService } from './login.service';
 export class LoginComponent {
 
   constructor(private loginService: LoginService) {}
+  
 
   sendRequest() {
      this.loginService.loginWithDiscord();
