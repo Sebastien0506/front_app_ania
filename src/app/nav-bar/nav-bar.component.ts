@@ -30,6 +30,7 @@ export class NavBarComponent {
         this.channels = data;
         this.isLogged;
         console.log("Channels récupéres:", data);
+        console.log("Channels:", this.channels);
       },
       error: (err) => {
         console.log("Utilisateur non connecté");
@@ -37,5 +38,6 @@ export class NavBarComponent {
       }
     });
   }
+  
 
 }

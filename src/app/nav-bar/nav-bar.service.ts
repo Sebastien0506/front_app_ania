@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 export interface Channel {
   id: number;
   name: string;
+  channel_id: string;
 }
 @Injectable({
   providedIn: 'root'

@@ -1,1 +1,5 @@
-<p>channel works!</p>
+<div *ngFor="let msg of messages" class="message">
+    <strong>{{msg.author}}</strong>
+    <small>{{ msg.created_at | date:'short'}}</small>
+    <p>{{ msg.content}}</p>
+</div>
